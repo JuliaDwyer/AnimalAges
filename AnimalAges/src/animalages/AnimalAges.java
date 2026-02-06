@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class AnimalAges
 	{
-
+		//master branch
 		static ArrayList<String> animals = new ArrayList<String>();
 		
 		public static void main(String[] args) throws Exception {
@@ -29,12 +29,12 @@ public class AnimalAges
 			
 			//print list
 			int sumAges = 0;
-			for(int x = 0; x < animals.size();  x++) {
-				String animal = animals.get(x);
+			for(int i = 0; i < animals.size();  i++) {
+				String animal = animals.get(i);
 				int age = Integer.parseInt(animal.split(",")[1]);
 				sumAges = sumAges+age;
 				
-				System.out.println(animals.get(x));
+				System.out.println(animals.get(i));
 			}
 			double averageAge = (double)sumAges/animals.size();
 			System.out.println("Average Age: " + averageAge);
